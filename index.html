@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3f1">
+  <title>Shop Invoices</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="column topbar-inner">
+      <a class="brand" href="#new" aria-label="Go to new invoice">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2.5h14v19l-2.33-1.5-2.34 1.5L12 20l-2.33 1.5L7.33 20 5 21.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 7.5h7M8.5 11h7M8.5 14.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span id="brand-name">Shop Invoices</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#new" data-route="new">New invoice</a>
+        <a href="#history" data-route="history">History</a>
+        <a href="#products" data-route="products">Products</a>
+        <a href="#settings" data-route="settings">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="column" tabindex="-1"></main>
+
+  <nav class="bottombar" aria-label="Main">
+    <a href="#new" data-route="new"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>New</a>
+    <a href="#history" data-route="history"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>History</a>
+    <a href="#products" data-route="products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8"/></svg>Products</a>
+    <a href="#settings" data-route="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Settings</a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/calc.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
